@@ -8,7 +8,7 @@ PyrographyArt::Application.routes.draw do
   get "static_pages/home"
   get "static_pages/contact"
 
-  resources :work
+  resources :works
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
