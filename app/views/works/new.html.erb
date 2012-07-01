@@ -1,8 +1,16 @@
-<h1>Work#new</h1>
-<p>Find me in app/views/work/new.html.erb</p>
-<%= simple_form_for @work  do |f| %>
+<h1>New Work</h1>
+
+<%= simple_form_for @work, :html => {:multipart => true}  do |f| %>
+
+	<%= f.error_notification %>
 	<%= f.input :name %>
-	<%= f.input :description %>
+	<%= f.text_area :description %><br>
+	<%= f.file_field :image %> <br>
+	Or image url <br>
+	<%= f.text_field :remote_image_url %> <br>
+	
 	<%= f.button :submit %>
 <% end %>
+
+
 

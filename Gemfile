@@ -17,11 +17,34 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 #	gem 'twitter-bootstrap-rails'
+gem 'bootstrap-sass'
+
+
   gem 'uglifier', '>= 1.0.3'
 end
 
+
 gem 'jquery-rails'
 gem 'simple_form'
+gem 'carrierwave'
+gem 'sorcery'
+#gem "rmagick"
+
+
+
+# File attachments for model, ie: profile pictures
+gem "paperclip", "~> 3.0.4"
+
+#Paperclip 3.0 introduces a non-backward compatible change in your attachment
+#path. This will help to prevent attachment name clashes when you have
+#multiple attachments with the same name. If you didn't alter your
+#attachment's path and are using Paperclip's default, you'll have to add
+#`:path` and `:url` to your `has_attached_file` definition. For example:
+#
+#    has_attached_file :avatar,
+#      :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
+#      :url => "/system/:attachment/:id/:style/:filename"
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

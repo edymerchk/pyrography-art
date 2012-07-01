@@ -1,2 +1,9 @@
-<h1>Work#show</h1>
-<p>Find me in app/views/work/show.html.erb</p>
+<h1><%= @work.name %></h1>
+
+Description: <%= @work.description %>
+Date: <%= @work.date %>
+
+<%= image_tag @work.image_url if @work.image? %>
+|<%= link_to "delete", @work, method: :delete,
+                                  data: { confirm: "You sure?" } %>
+
