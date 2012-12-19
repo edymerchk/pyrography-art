@@ -5,4 +5,11 @@ class Work < ActiveRecord::Base
   mount_uploader :image, ImageUploader
 
 
+  	def next
+		 Work.where("id > ?",self.id).first
+	end
+	def prev
+		 Work.where("id < ?",self.id).last
+	end
+
 end

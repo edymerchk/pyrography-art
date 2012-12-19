@@ -14,7 +14,7 @@ class WorksController < ApplicationController
     @work = Work.new(params[:work])
     @work.date = DateTime.now   
     if @work.save
-      flash[:success] = "Saved successful"
+      flash[:success] = "Guardado correctamente"
       redirect_to @work
       # Handle a successful save.
     else
@@ -28,7 +28,7 @@ class WorksController < ApplicationController
 
   def destroy
     Work.find(params[:id]).destroy
-    flash[:success] = "Work destroyed."
+    flash[:success] = "Trabajo Destruido!"
     redirect_to works_path
   end
 

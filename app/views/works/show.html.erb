@@ -1,9 +1,16 @@
-<h1><%= @work.name %></h1>
+<div>
+	<h1><%= @work.name %></h1>
 
-Description: <%= @work.description %>
-Date: <%= @work.date %>
+	
+	
+	<div  id="image"><%= image_tag @work.image_url if @work.image? %></div>
+	<div  id="date">Fecha: <%= @work.date %> <%= link_to "Borrar", @work, method: :delete,
+	                                  data: { confirm: "You sure?" } %></div>
+	
+	<div id="description">Descripcion: <%= @work.description %> </div>
+	<%= link_to "Anterior", @work.prev if @work.prev  %>|	
+	<%=link_to "Siguiente", @work.next  if @work.next %>
 
-<%= image_tag @work.image_url if @work.image? %>
-|<%= link_to "delete", @work, method: :delete,
-                                  data: { confirm: "You sure?" } %>
 
+
+</div>
