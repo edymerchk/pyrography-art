@@ -4,4 +4,9 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def index
+  	@works_recent = Work.recent
+  	
+  end
 end

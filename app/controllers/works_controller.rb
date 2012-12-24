@@ -24,6 +24,7 @@ class WorksController < ApplicationController
 
   def show
   	@work = Work.find(params[:id])
+    @works_random = Work.random
   end
 
   def destroy

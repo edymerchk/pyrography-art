@@ -4,6 +4,7 @@ class CreateWorks < ActiveRecord::Migration
       t.string :name
       t.date :date
       t.string :description
+      t.decimal :price
       
 
       t.timestamps

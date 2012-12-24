@@ -1,8 +1,13 @@
-<div class="work">
-	Nombre: <%= work.name %> <br>
-
-
- <%= link_to image_tag( work.image_url, :size => "150x150" ), work
-  %>
-
-</div>
+<li style="height: 229px; " class="generated-height ">
+	<div class="product-grid-item ">
+		<%= link_to work, :class =>"product-link" do%>					
+		<%= image_tag(work.image.url, :size => "177x177", :class =>"product-photo")%> 
+		<div class="product-information" style="height: 32px;">
+			<%= work.name %>
+		</div>
+		<span class="product-price">			
+			<small>$25.500</small> 
+		</span>
+		<% end %>    
+	</div>    
+</li>

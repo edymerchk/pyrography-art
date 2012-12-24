@@ -1,9 +1,12 @@
-<h1>Todos los trabajos</h1>
-
-<div id="allworks">
-  <%= render @works %>
+<div class="content-wrapper clearfix">
+	<div id="col-main" class="all">
+		<section class="diagonal-divider clearfix">
+			<header class="section-details clearfix">
+				<h2 class="section-title">Trabajos</h2>
+			</header>
+			<ul class="product-grid clearfix">
+				<%= render @works %>
+			</ul>		
+		</section>
+	</div> <!-- /#col-main -->
 </div>
-
-
-
-

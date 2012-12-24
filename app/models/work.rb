@@ -12,4 +12,8 @@ class Work < ActiveRecord::Base
 		 Work.where("id < ?",self.id).last
 	end
 
+	scope :recent, Work.order("created_at DESC").limit(3)
+	scope :random, Work.order("RANDOM()").limit(4) # for Msyql use RAND
+
+
 end

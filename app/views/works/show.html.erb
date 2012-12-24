@@ -1,16 +1,27 @@
-<div>
-	<h1><%= @work.name %></h1>
-
-	
-	
-	<div  id="image"><%= image_tag @work.image_url if @work.image? %></div>
-	<div  id="date">Fecha: <%= @work.date %> <%= link_to "Borrar", @work, method: :delete,
-	                                  data: { confirm: "You sure?" } %></div>
-	
-	<div id="description">Descripcion: <%= @work.description %> </div>
-	<%= link_to "Anterior", @work.prev if @work.prev  %>|	
-	<%=link_to "Siguiente", @work.next  if @work.next %>
-
-
-
+<div class="content-wrapper clearfix">
+	<div id="col-main">
+		<div id="product" class="clearfix content">
+			<div id="product-information">
+				<p id="add-to-cart-msg"></p>
+				<div id="product-header" class="diagonal-divider clearfix">
+					<div id="product-header-title">
+						<h1 id="product-title"><%=@work.name%></h1>
+					</div>		
+				</div><!-- /#product-header -->
+				<div class="description">
+					<p><%=@work.description%></p>
+						<%= render "sharing" %> 
+				</div>
+			</div><!-- /#product-information -->
+				<%= render "galery"%>
+		</div><!-- /#product -->
+			<%= render "others" %>
+	</div><!-- /#col-main -->
+	<div>
+		<%= link_to "Anterior", @work.prev if @work.prev  %>|	
+		<%=link_to "Siguiente", @work.next  if @work.next %>
+	</div>
 </div>
+
+
+

@@ -1,0 +1,26 @@
+
+<section class="diagonal-divider clearfix">
+
+	<header class="section-details clearfix">
+		<h1 class="section-title"><a href="/collections/frontpage" title="">Otros...</a></h1>
+	</header>
+	<ul class="product-grid" id="secondary-grid">
+		<% @works_random.each do |work|%>
+		<li class="generated-height" style="height: 213px;">
+			<div class="product-grid-item ">
+				<%= link_to work, :class =>"product-link" do%>					
+				<%= image_tag(work.image.url, :size => "177x177", :class =>"product-photo")%> 
+				<div class="product-information" style="height: 32px;">
+					<%= work.name %>
+				</div>
+				<span class="product-price">			
+					<small>$25.500</small> 
+				</span>
+				<% end %>       
+			</div>    
+		</li>
+		<% end %>
+		
+	</ul>      
+
+</section>
