@@ -1,26 +1,35 @@
+    <link href='http://fonts.googleapis.com/css?family=Stalemate' rel='stylesheet' type='text/css'>
+
+
     <header id="top" class="clearfix">
-      <h1 id="site-title">
-        <a href="/" title="Home">          
-            <img src="http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/logo.png?28">   
-        </a>
+      <h1 id="my-title">       
+        Pirograbados Laverde
       </h1>
       <nav id="top-menu" class="clearfix">
         <ul>          
           <li class="first">           
-              <a href="/">Home</a>            
+            <a href="/">Home</a>            
           </li>          
           <li class="">
-              <%= link_to "Galeria", works_path %> 
+            <%= link_to "Galeria", works_path %> 
           </li>
           <li class="">             
-              <%= link_to "Tu Retrato", about_path %>            
+            <%= link_to "Tu Retrato", retrato_path %>            
           </li>    
           <li class="">             
-              <%= link_to "Acerca de mi", about_path %>            
+            <%= link_to "Acerca de mi", about_path %>            
           </li>
           <li class="last">           
-            <%= link_to "Contactame", about_path %>                           
+            <%= link_to "Contactame", "/contact-us" %>                           
           </li>          
         </ul>        
       </nav>
-   </header>
+      <div id="umbrella">
+        <ul>
+          <%= li("Login",login_path) unless current_user %>          
+          <%= li("Nuevo Cuadro",new_work_path) if current_user %>
+          <%= li("Logout",logout_path) if current_user %>
+
+        </ul>
+      </div>
+    </header>

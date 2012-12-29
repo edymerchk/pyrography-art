@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.6'
 
 gem 'sqlite3'
+gem 'pg'
 gem 'quiet_assets', :group => :development #fix assets msgs
 gem 'jquery-rails'
 gem 'simple_form'
@@ -19,6 +20,7 @@ gem 'thin' #fix warnings msgs
   gem 'bootstrap-sass'
   gem 'bootswatch-rails'
   gem 'uglifier', '>= 1.0.3'
+  gem 'contact_us', '~> 0.4.0' #contact form
 
 
 

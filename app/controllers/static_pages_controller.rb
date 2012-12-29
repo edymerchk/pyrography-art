@@ -1,12 +1,13 @@
 class StaticPagesController < ApplicationController
-  def home
-  end
 
-  def contact
+  def admin
   end
 
   def index
-  	@works_recent = Work.recent
+  	@works_recent = Work.recent  	
+  end
+
+  def retrato
   	
   end
 end

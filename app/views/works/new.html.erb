@@ -1,16 +1,23 @@
-<h1>New Work</h1>
-
-<%= simple_form_for @work, :html => {:multipart => true}  do |f| %>
-
-	<%= f.error_notification %>
-	<%= f.input :name %>
-	<%= f.text_area :description %><br>
-	<%= f.file_field :image %> <br>
-	Or image url <br>
-	<%= f.text_field :remote_image_url %> <br>
-	
-	<%= f.button :submit %>
-<% end %>
+<div class="content-wrapper clearfix">
 
 
+	<div id="col-main" class="content">
+		<div id="page-header">
+			<h2 id="page-title">Nuevo Cuadro</h2>	
+		</div>
 
+		<%= simple_form_for @work, :html => {:multipart => true}  do |f| %>
+		<%= f.error_notification %>
+		<%= f.input :name, label: "Nombre" %><br>		
+		<%= f.text_area :description, label: "Descripcion"%><br>
+		<%= f.file_field :image , label: "Imagen"%><br>
+
+		<%= f.button :submit%><br>
+		<% end %>
+
+
+	</div><!-- /#col-main -->    
+
+
+
+</div>

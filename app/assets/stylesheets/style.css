@@ -111,7 +111,16 @@ input[type="text"].error, input[type="email"].error, input[type="password"].erro
 
 html{ background-color: #63543c }
 
-
+/*edy*/
+.alert{
+  font-size: 18px;
+}
+#flash_error, .alert-error, #flash_alert{
+  color: red;
+}
+#flash_success, .alert-success, #flash_notice{
+  color: green;
+}
 
 /**
  * Base Content Styles
@@ -219,11 +228,16 @@ body { text-align: center; }
   z-index: 100;
   }
 
-#site-title{
-  font: normal 48px/1.0 BebasNeueRegular, arial, sans-serif;
+#my-title{
+  font-family: 'Stalemate', cursive;
   color: #ffe86b;
   margin: 0;
+  font-size: 80px
+
+
   }
+
+
 #site-title a{
   text-decoration: none;
   color: #ffe86b;

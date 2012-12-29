@@ -10,8 +10,9 @@ PyrographyArt::Application.routes.draw do
   root to: 'static_pages#index'
   
   get "/about" => "static_pages#about", as: "about"
+  get "/turetrato" => "static_pages#retrato", as: "retrato"
 
-  get "static_pages/contact"
+  
 
   resources :works
 
