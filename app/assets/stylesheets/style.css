@@ -1205,9 +1205,7 @@ article footer .btn { padding: 2px 10px; }
   width: 150px;
   color: #666;
   }
-.comment-form .text:focus{
-  border-color: ;
-  }
+
 .comment-form textarea.text{
   width: 500px;
   }
