@@ -20,6 +20,7 @@ gem 'thin' #fix warnings msgs
   gem 'bootswatch-rails'
   gem 'uglifier', '>= 1.0.3'
   gem 'contact_us', '~> 0.4.0' #contact form
+  gem 'faker' #generate fake things
 
 
 
