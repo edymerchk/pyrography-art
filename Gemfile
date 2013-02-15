@@ -18,6 +18,9 @@ gem 'bootswatch-rails'
 gem 'uglifier', '>= 1.0.3'
 gem 'contact_us', '~> 0.4.0' #contact form
 gem 'faker' #generate fake things
+gem "fog", "~> 1.3.1" # S3 carriewave
+gem 'carrierwave_direct'
+gem 'sidekiq'
 
 
 
