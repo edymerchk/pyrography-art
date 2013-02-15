@@ -103,7 +103,7 @@ input[type="text"].error, input[type="email"].error, input[type="password"].erro
 
   html{
   
-    background: url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/variant-wood-bg-oak.jpg?16) 0 0;
+    background: url(images/variant-wood-bg-oak.jpg) 0 0;
 
   
   }
@@ -168,7 +168,7 @@ table th{
   font-weight: bold;
   border: solid 1px #b6a285;
   color: #d7185c;
-  background: #d5c7b3 url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/table-header-depth.png?16) 0 100% repeat-x;
+  /*background: #d5c7b3 url(http://cdn.shopify.com/s/files/1/010/9662/t/3/assets/table-header-depth.png?16) 0 100% repeat-x;*/
   }
 table td{
   padding: 4px 8px;
@@ -343,45 +343,6 @@ body { text-align: center; }
   }
 
 
-/**
- * Header Search
- */
-
-#header-search{
-  float: right;
-  margin: 0;
-  }
-#header-search #top-search-input{
-  width: 174px;
-  font-size: 12px;
-  padding: 6px 3px;
-  border: solid 1px #9b835e;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  float: left;
-  }
-#header-search #top-search-submit{
-  border: none;
-  width: 25px;
-  height: 25px;
-  
-  background: url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/icon-search.png?16) 0 -50px no-repeat;
-  
-  float: right;
-  margin: 0 0 0 8px;
-  font-size: 0; /* ie7 */
-  line-height: 50px; /* ie7 */
-  }
-#header-search #top-search-submit:hover{
-  
-  background-position: 0 -75px;
-  
-  }
-
-#header-search{
-  width: 215px;
-  }
 
 
 
@@ -426,18 +387,7 @@ body{ border-top: solid 4px #443827; }
   }
 #umbrella a:hover{ color: #ffffff; }
 
-#umbrella .num-items-in-cart .icon{
-  display: block;
-  padding: 0 0 0 26px;
-  
-  background: url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/cart-icons.png?16) 0 -58px no-repeat;
-  
-  }
-#umbrella .num-items-in-cart:hover .icon{
-  
-  background: url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/cart-icons.png?16) 0 -87px no-repeat;
-  
-  }
+
 
 #umbrella .checkout-link{
   padding: 0;
@@ -472,7 +422,7 @@ body{ border-top: solid 4px #443827; }
 
 .diagonal-divider{
   
-  background: url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/diagonal-white.png?16) 0 0 repeat-x;
+  background: url("images/diagonal-white.png?16") 0 0 repeat-x;
   padding: 16px 0 0 0;
   width: 750px;
   margin: 0 0 20px 0;
@@ -729,7 +679,7 @@ body{ border-top: solid 4px #443827; }
   }
 
 #active-image-loading{
-  background: #fff url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/icon-loading.gif?16) 50% 50% no-repeat;
+  
   width: 40px;
   height: 40px;
   -moz-border-radius: 20px;
@@ -803,9 +753,7 @@ body{ border-top: solid 4px #443827; }
 
 article{
   margin: 20px 0 45px 0;
-  
-  background: url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/diagonal-white.png?16) 0 100% repeat-x;
-  
+    
   padding: 0 0 10px 0;
   }
 .templateArticle article{ margin-top: 0; }
@@ -861,7 +809,7 @@ article footer .btn { padding: 2px 10px; }
 .pagination a:hover, .pagination .active a {
   color: #f3e7d5;
   background-color: #d7185c;
-  background: #9a8361 url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/btn-small-depth.png?16) 0 100% repeat-x;
+  
   }
 .pagination .active a{
   border-right-color: #63543c;
@@ -1089,9 +1037,6 @@ article footer .btn { padding: 2px 10px; }
   display: inline-block;
   padding-left: 16px;
   }
-.action_edit{ background: url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/edit-sml.png?16) 0 0 no-repeat; }
-.action_delete{ background: url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/delete-sml.png?16) 0 1px no-repeat; }
-.action_add{ background: url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/add-sml.png?16) 0 0 no-repeat; }
 
 .default_address{
   color: #d7185c;
@@ -1227,7 +1172,7 @@ article footer .btn { padding: 2px 10px; }
   padding: 10px;
   color: #fff;
   text-align: left;
-  background: url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/btn-small-depth.png?16 0 100% repeat-x);
+
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -1423,7 +1368,7 @@ col.checkout-delete{ width: 80px; }
 #sm-icons a{
   width: 36px;
   height: 37px;
-  background-image: url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/social-media.png?16);
+  background-image: url("images/social-media.png");
   display: block;
   }
 
@@ -1562,7 +1507,7 @@ col.checkout-delete{ width: 80px; }
 .btn,
 a.btn{
   display: inline-block;
-  background: #9a8361 url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/btn-small-depth.png?16) 0 100% repeat-x;
+  
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -1579,7 +1524,7 @@ a.btn{
 .btn.disabled:hover,
 a.btn.disabled:hover{
   border: solid 1px #9a8361;
-  background: #9a8361 url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/btn-small-depth.png?16) 0 100% repeat-x;
+  
   color: #f3e7d5;
   }
   
@@ -1588,17 +1533,17 @@ a.btn.disabled:hover{
 .btn:hover,
 a.btn:hover{
   border: solid 1px #d7185c;
-  background: #d7185c url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/btn-small-depth.png?16) 0 100% repeat-x;;
+  
   color: #ffffff;
   }
 
 .btn-reversed{
   border: solid 1px #d7185c;
-  background: #d7185c url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/btn-small-depth.png?16) 0 100% repeat-x;;
+  
   color: #ffffff;
   }
 .btn-reversed:hover{
-  background: #9a8361 url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/btn-small-depth.png?16) 0 100% repeat-x;
+  
   border: solid 1px #9a8361;
   color: #f3e7d5;
   }
@@ -1669,14 +1614,14 @@ a.btn:hover{
   display: block;
   width: 240px;
   height: 200px;
-  background: #9a8361 url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/placeholder-product.png?16) 50% 50% no-repeat;
+  
   }
 
 .product-grid .placeholder{
   width: 177px;
   height: 130px;
   display: block;
-  background: #9a8361 url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/placeholder-product.png?16) 50% 50% no-repeat;
+  
   }
 
 
@@ -1704,7 +1649,7 @@ a.btn:hover{
   z-index: 5;
   width: 345px;
   height: 193px;
-  background: url(http://cdn.shopify.com/s/files/1/0107/9662/t/3/assets/no-products-post-it.png?16) 0 0 no-repeat;
+
   font-family: georgia, serif;
   font-size: 16px;
   color: #4b4a43;

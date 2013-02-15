@@ -3,9 +3,9 @@ PyrographyArt::Application.routes.draw do
 
   get "logout" => "sessions#destroy", as: "logout"
   get "login" => "sessions#new", as: "login"
-  get "signup" => "users#new", as: "signup"
-  resources :users
-  resources :sessions
+  
+  
+  
 
   root to: 'static_pages#index'
   
@@ -13,7 +13,7 @@ PyrographyArt::Application.routes.draw do
   get "/turetrato" => "static_pages#retrato", as: "retrato"
 
   
-
+  resources :sessions
   resources :works
 
 
