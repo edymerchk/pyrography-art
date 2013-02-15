@@ -76,4 +76,5 @@ PyrographyArt::Application.configure do
   enable_starttls_auto: true,
   user_name: "verifierjudge@gmail.com",
   password: "katalina69" #random name and random number xD
+}
 end
