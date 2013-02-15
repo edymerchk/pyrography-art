@@ -1251,7 +1251,7 @@ col.checkout-delete{ width: 80px; }
 
 
 #cartform td img{ display: block; }
-#cartform input.text { border: solid 1px ; padding: 4px; color: ; text-align: center; }
+#cartform input.text { border: solid 1px ; padding: 4px ; text-align: center; }
 
 #cartform .subtotal{
   text-align: center;
