@@ -101,7 +101,7 @@ select{ max-width: 99%; /* for ff */ }
 input[type="text"].error, input[type="email"].error, input[type="password"].error { border-color:red }
 
 
-  html{
+  body{
   
     background: url(images/variant-wood-bg-oak.jpg) 0 0;
 
