@@ -63,6 +63,11 @@ footer, header, hgroup, menu, nav, section {
   display: block;
   }
 
+  
+.btnpink{
+  background: #d7185c  !important;
+}
+
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
 q:before, q:after { content: ''; content: none; }
