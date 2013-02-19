@@ -12,7 +12,12 @@ class ImageUploader < CarrierWave::Uploader::Base
    include Sprockets::Helpers::IsolatedHelper
 
   # Choose what kind of storage to use for this uploader:
-  storage :file
+
+    if Rails.env.production?
+      storage :fog
+    else
+      storage :file   
+    end
  # storage :fog  #default by CarrierWaveDirect
 
 

@@ -5,9 +5,7 @@ class CreateWorks < ActiveRecord::Migration
       t.date :date
       t.string :description
       t.integer :price
-      t.string :size     
       
-
       t.timestamps
     end
   end
