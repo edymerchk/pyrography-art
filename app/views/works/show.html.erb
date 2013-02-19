@@ -18,6 +18,7 @@
 					<%= link_to image_tag("destroy.png", size:"25x25"), work_path, method: :delete ,data: { confirm: 'Are you sure?'} %>
 					<%= link_to image_tag("edit.png", size:"25x25"), edit_work_path(@work)  %>
 					<%end %>
+							<%= render "sharing"%>
 				</div>
 			</div><!-- /#product-information -->
 				<%= render "galery"%>
