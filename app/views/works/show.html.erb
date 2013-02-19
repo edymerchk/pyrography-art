@@ -12,7 +12,12 @@
 					<p><%=@work.description%></p>
 					<p><%= number_to_currency(@work.price) %></p> 
 					<p><%= @work.size %></p> 
-						
+					<%if current_user %>
+			
+
+					<%= link_to image_tag("destroy.png", size:"25x25"), work_path, method: :delete ,data: { confirm: 'Are you sure?'} %>
+					<%= link_to image_tag("edit.png", size:"25x25"), edit_work_path(@work)  %>
+					<%end %>
 				</div>
 			</div><!-- /#product-information -->
 				<%= render "galery"%>
