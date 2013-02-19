@@ -9,13 +9,13 @@
 		<%= simple_form_for @work, :html => {:multipart => true}  do |f| %>
 		<%= f.error_notification %>
 		<%= f.input :name, label: "Nombre" %><br>		
-		<%= f.text_area :description, label: "Descripcion"%><br>
+		<%= f.text_area :description, label: "Descripcion"%><br><br>
 		<%= f.file_field :image , label: "Imagen"%><br>
 		<%= f.input :size, label: "Tamaño" %><br>		
 		<%= f.input :price, label: "Precio" %><br>		
 
 
-		<%= f.button :submit%><br>
+		<%= f.button :submit, "Crear", class: "btnpink" %><br>
 		<% end %>
 
 

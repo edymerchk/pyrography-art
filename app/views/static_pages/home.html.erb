@@ -2,20 +2,20 @@
   <h1>Pyrography Art</h1>
   <br>
   <p class="lead">Complete collection of Pyrography Art made by me </p>
-      <%= link_to "Enter!", works_path, 
-                                class: "btn btn-large btn-primary" %>
-      <%= link_to "New!", new_work_path, 
-                                class: "btn btn-large " %>
+  <%= link_to "Enter!", works_path, 
+  class: "btn btn-large btn-primary" %>
+  <%= link_to "New!", new_work_path, 
+  class: "btn btn-large " %>
 
-<br>
-<br>
-<% if current_user %>
+  <br>
+  <br>
+  <% if current_user %>
   Logged in as <%= current_user.email %>.
   <%= link_to "Log out", logout_path %>
-<% else %>
+  <% else %>
   <%= link_to "Sign up", signup_path %> or
   <%= link_to "log in", login_path %>.
-<% end %>                                
+  <% end %>                                
 
 
 </header>

@@ -1,5 +1,4 @@
 
-
 <div class="content-wrapper clearfix">
 
 
@@ -9,11 +8,10 @@
 		</div>
 		
 		<%= simple_form_for @contact, :url => contacts_path do |f| %>
-		<%= f.input :name, :label => t('.name') if ContactUs.require_name %>
-		<%= f.input :email, :label => t('.email') %>
-		<%= f.input :subject, :label => t('.subject') if ContactUs.require_subject %>
-		<%= f.input :message, :as => :text, :label => t('.message') %>
-		<%= f.button :submit, :label => t('.submit'), :button_html => { :alt => t('.submit'), :id => 'contact_us_contact_submit', :title => t('.submit') } %>
+		<%= f.input :name, :label => "Nombre" if ContactUs.require_name %>
+		<%= f.input :email, :label => "Correo" %>		
+		<%= f.input :message, :as => :text, :label => "Mensaje" %>
+		<%= f.button :submit, :value =>"Enviar", :class => "btnpink" %>
 		<% end %>
 	</div><!-- /#col-main -->    
 

@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(:version => 20120701212713) do
     t.string   "email"
     t.string   "crypted_password"
     t.string   "salt"
-    t.string   "admin",                        :default => "f"
-    t.datetime "created_at",                                    :null => false
-    t.datetime "updated_at",                                    :null => false
+    t.boolean  "admin",                        :default => false
+    t.datetime "created_at",                                      :null => false
+    t.datetime "updated_at",                                      :null => false
     t.string   "remember_me_token"
     t.datetime "remember_me_token_expires_at"
   end
